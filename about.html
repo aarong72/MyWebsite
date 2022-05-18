@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" conent="width=device-width, initial-scale=1.0">
+    <title>Aaron's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="3.png">
+</head>
+
+<body class="aboutme-body">
+    <section class = "header-abtme">
+        <nav>
+        <a href="index.html">    
+            <div class="box"><div class="box glowing"><div class="box"></div></div></div>
+        </a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="experience.html">EXPERIENCE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>    
+        </div>
+        <form action="/action_page.php">
+            <input type="text1" placeholder="Search..." name="search">
+            <button type="submit1"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+        </nav>
+        <div class="aboutme-container">
+            <div class="boxes box1">
+                <div class="boxcontent">
+                    <h2>Who am I?</h2>
+                    <p>&emsp; Currently, I am a senior at Marymount University looking to get my foot into the door in the IT field. I'm expecting to graduate by December 2022 with a major in Information Technology and a minor in Computer Science. I've been coding since I was a junior in Highshool and started with Java. From there I took AP computer science classes and throughout college continued to take coding/scripting classes where I took leaps in my coding abilities. My sophomore year of college I started my internship at Navy Federal Credit Union (NFCU) which was my first introduction into the professional world of IT. I was a Desktop Support Intern there for 2 years before I found a new position inside of NFCU. My current position is a Business Systems Analyst Intern position. Currently, this role allows me to use coding on a daily basis and has given me the opportunity to obtain a considerable amount of knowledge. </p>
+                </div>
+            </div>
+            <div class="boxes box2">
+                <div class="boxcontent">
+                    <h2>Technical Skills</h2>
+                    <p>&emsp; In my career so far, I've become fairly knowledgeable with a variety of different coding languages. Listed below are the languages I'm most familiar with. <br></p>
+                    <div class="collapse">
+                    <ul>
+                        <button type="button" class="collapsible">Python</button>
+                        <div class="collapsible-content">
+                            <p>Python is my personal favorite language to work with and the one I'm most knowledgable about. I've created multiple large projects using python and whenever I have a choice of languages to work with it is almost always my go to. </p>
+                        </div>
+                        <button type="button" class="collapsible">C#</button>
+                        <div class="collapsible-content">
+                            <p>C# is the language I'm newest to and it is also the language I use on a daily basis at my current job. For the past year I've been using C# to complete professional work and have learned an extensive amount.</p>
+                        </div>
+                        <button type="button" class="collapsible">Java</button>
+                        <div class="collapsible-content">
+                            <p>Java is the language that I've been using the longest and it's the language I used to learn how to code. I've been using Java for 6 years now but have focused on other languages and haven't used it at my current job.</p>
+                        </div>
+                        <button type="button" class="collapsible">HTML</button>
+                        <div class="collapsible-content">
+                            <p>I'm fairly versed in HTML and have used it in a professional setting increasingly over the past year. As I am newer to HTML, there is still lots of room to develop my expertise, but over the past year my knowledge of it has accelerated.</p>
+                        </div>
+                        <button type="button" class="collapsible">AutoIT</button>
+                        <div class="collapsible-content">
+                            <p>AutoIT is not a very well-known language, but at my current position we still use it in order to interact with some of our older applications. I mainly work within and edit already exisiting AutoIT applications.</p>
+                        </div>
+                        <button type="button" class="collapsible">SQL</button>
+                        <div class="collapsible-content">
+                            <p>Throughout college, I have taken a few classes focused on SQL and use it in a professional setting today. In my current role, we mostly use stored procedures in order to pull data from different databases. </p>
+                        </div>
+                        <button type="button" class="collapsible">PowerShell</button>
+                        <div class="collapsible-content">
+                            <p>PowerShell is the only language that I'm completely self-taught in. I used PowerShell at my Desktop Support position in order to automate fixes to issues we'd see customers having often.</p>
+                        </div>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="boxes box3">
+                <div class="boxcontent">
+                    <h2>Who am I outside of IT?</h2>
+                    <p>&emsp; I was born in Burke, VA and throughout my adolenscence I loved playing sports. I played football, soccer, baseball, and basketball on a team until I was in highschool. I attended Lake Braddock Secondary School and focused on playing basketball. <br> Once I entered college, I started to realize that I most likely wouldn't have the time to continue to play and my first college, Northern Virginia Community College, did not have a team. From there my interest in IT grew and I continued to take some classes that would help me develop my coding skill. Eventually I transferred to Marymount where I am today. <br> Once COVID-19 hit I started to pick up other interests, such as cooking, video games, and running, while also researching future plans. Now, I'm planning on moving into an apartment in Brooklyn, NY.  </p>
+                </div>
+            </div>
+        </div>
+    
+<script>
+function toggleContent(content) {
+  if (content.style.maxHeight) {
+    content.style.maxHeight = null;
+  } else {
+    content.style.maxHeight = content.scrollHeight + 'px';
+  }
+}
+
+function collapseAllOpenContent() {
+  const colls = document.getElementsByClassName('collapsible');
+  for (const coll of colls) {
+    if (coll.classList.contains('active')) {
+      coll.classList.remove('active');
+      toggleContent(coll.nextElementSibling);
+    }
+  }
+}
+
+const colls = document.getElementsByClassName('collapsible');
+for (const coll of colls) {
+  coll.addEventListener('click', function() {
+    if (!this.classList.contains('active')) {
+      collapseAllOpenContent();
+    }
+    this.classList.toggle('active');
+    toggleContent(this.nextElementSibling);
+  });
+}
+</script>
+</section>
+    
+</body>
+
+    
+    
+    
+
+</html>

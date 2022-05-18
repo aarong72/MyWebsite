@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" conent="width=device-width, initial-scale=1.0">
+    <title>Aaron's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="3.png">
+</head>
+    
+<body>
+    <section class = "header-projects">
+        <nav>
+        <a href="index.html">    
+            <div class="box"><div class="box glowing"><div class="box"></div></div></div>
+        </a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="experience.html">EXPERIENCE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <form action="/action_page.php">
+            <input type="text1" placeholder="Search..." name="search">
+            <button type="submit1"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+        </nav>
+        <div class="projects-header">
+        <h1>Project Gallery</h1>
+            <p>Hover over the images to get a larger view and a brief description of what they do</p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="box-projects">  
+                    <img id="image-3" src="pythonCalcUpdated.png" class="gallery-projects" height = '300px' width='300px'/>  
+                    <span class="caption fade-caption">  
+                        <h3> Python Calculator Project</h3>  
+                        <p>Calculator with GUI created from scratch. Caclulator has self-defined functions along with API pulls and file read/writing. Was a part of a final project where I was tasked to create my own application. </p>  
+                    </span>  
+                </div>
+            </div>
+            <div class="col">
+                <div class="box-projects">  
+                    <img id="image-3" src="msp.png" class="gallery-projects" height = '300px' width='300px'/>  
+                    <span class="caption fade-caption">  
+                        <h3> MSP Black Knight Macro (C#)</h3>  
+                        <p>Created an internal application that runs on a daily cycle in order to generate reports for one of our member-facing departments. Application interacts with member data, writes to files, and pulls data from the screen. This project was done in a professional setting so I am not able to share pictures of what was done.</p>  
+                    </span>  
+                </div>
+            </div>    
+            <div class="col">
+                <div class="box-projects">  
+                    <img id="image-3" src="pythonGame.png" class="gallery-projects" height = '300px' width='300px'/>  
+                    <span class="caption fade-caption">  
+                        <h3> Python Space Invaders Game</h3>  
+                        <p>This project is a another final project I had done for school where I was tasked with creating a game. This game is reminiscent of Galaga or Space Invaders, and includes score keeping, level progression, and a multitude of self-made classes.</p>  
+                    </span>  
+                </div>
+            </div>
+        </div>    
+     <script>
+
+    function myFunction() {
+    var popup = document.getElementById("popup1");
+    popup.classList.toggle("show");
+}
+</script>
+
+
+        
+    </section>
+    
+
+</body>
+
+
+    
+ <footer>
+<p>&copy; AJG</p>
+<p>Author: Aaron J Galonis</p>
+</footer>   
+    
+
+</html>
